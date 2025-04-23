@@ -1,0 +1,52 @@
+/***** Always True *****/
+@media only screen {
+    .loading-border {
+        border: 1px solid;
+        animation: load-border 1.5s infinite ease-in-out;
+
+        --border-color: var(--tertiary);
+    }
+    
+    @keyframes load-border {
+        0%, 100% {
+            border-color: transparent;
+        }
+        50% {
+            border-color: var(--border-color);
+        }
+    }
+    
+    .load-bar-container {
+        left: 50%;
+        z-index: 1;
+        position: absolute;
+        transform: translateX(-50%);
+        top: calc(65px + var(--nav-top));
+    }
+
+    .load-bar { 
+        height: 5px;
+        background: var(--bg-secondary);
+    }
+    
+    .load-bar span {
+        display: block;
+        height: 100%;
+    }
+    
+    .load-bar-progress {
+        animation-fill-mode: both; 
+        background-color: var(--primary);
+        animation: progressBar 3s ease-in-out infinite;
+    }
+    
+    .load-bar-text {
+        text-align: center;
+        color: var(--font-color-primary);
+    }
+
+    @keyframes progressBar {
+      0% { width: 0; }
+      100% { width: 100%; }
+    }
+}
