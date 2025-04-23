@@ -1,5 +1,4 @@
 // css stylesheets
-import './assets/css/load.css';  
 import './assets/css/utils.css';  
 import './assets/css/vars/_fonts.css';  
 import './assets/css/vars/_theme.css';

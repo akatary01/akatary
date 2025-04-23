@@ -1,0 +1,19 @@
+{
+    "github": {
+        "icon": "fa-brands fa-github",
+        "href": "https://github.com/akatary01",
+        "tooltip": "GitHub"
+    },
+
+    "linkedin": {
+        "icon": "fa-brands fa-linkedin",
+        "href": "https://www.linkedin.com/in/akatary/",
+        "tooltip": "LinkedIn"
+    },
+
+    "spigot": {
+        "icon": "fa-brands fa-spigot",
+        "href": "https://www.spigotmc.org/resources/authors/stardust0.1870359/",
+        "tooltip": "Spigot"
+    }
+}

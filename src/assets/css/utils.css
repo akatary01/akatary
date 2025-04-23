@@ -77,16 +77,7 @@
         margin-top: 30px;
     }
 
-    button:hover .tooltip, button:hover .tooltip-bottom {visibility: visible;}
-
-    @keyframes spin {
-        from {
-            transform:rotate(0deg);
-        }
-        to {
-            transform:rotate(360deg);
-        }
-    }
+    .icon-button:hover .tooltip, .icon-button:hover .tooltip-bottom {visibility: visible;}
 
     .dropdown-caret {
         margin-right: 5px;

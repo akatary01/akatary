@@ -1,0 +1,9 @@
+/***** Always True *****/
+@media only screen {
+    #book {
+    }
+
+    #book > #cover {}
+
+    #book > .page {}
+}
