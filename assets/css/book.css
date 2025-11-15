@@ -1,0 +1,70 @@
+/***** Always True *****/
+@media only screen {
+    #book, #book #cover {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url('../book-bg-4k.png');
+    }
+
+    #book #cover {
+        box-shadow: 4px 0 4px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    #book .page {
+        padding: 40px 0;
+        margin: -30px 0 0 -15px;
+        background-color: var(--font-color-primary);
+    }
+
+    #book nav {
+    }
+
+    #book nav a {
+        margin: 0;
+        width: 75px;
+        opacity: 0.5;
+        padding: 5px 20px;
+        text-align: center;
+        color: var(--bg-primary);
+        background: var(--font-color-primary);
+        font-size: var(--font-size-title-large);
+    }
+
+    #book nav a:not(.active):hover {
+        opacity: 1;
+        background: var(--font-color-secondary);
+    }
+
+    #book nav a.active {
+        opacity: 1;
+        margin: -5px 0 0 0;
+        padding: 7.5px 20px;
+    }
+
+    .open-cover {
+	    -webkit-animation: open-cover 2s ease-out both;
+	    animation: open-cover 2s ease-out both;
+    }
+    
+    @-webkit-keyframes open-cover {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+    }
+    @keyframes open-cover {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            transform: translateY(-135%);
+        }
+        100% {
+            transform: translate(10px, 0px);
+            z-index: -1;
+        }
+    }
+}

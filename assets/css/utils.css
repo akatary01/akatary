@@ -1,12 +1,15 @@
 /***** Always True *****/
 @media only screen {
     .flex {display: flex;}
+    .hide {display: none;}
     .flex-wrap {flex-wrap: wrap;}
     .column {flex-direction: column;}
     .align-center {align-items: center;}
     .align-start {align-items: flex-start;}
     .align-self-cetner {align-self: center;}
     .justify-center {justify-content: center;}
+    .align-self-start {align-self: flex-start;}
+    .justify-around {justify-content: space-around;}
     .justify-between {justify-content: space-between;}
 
     .align-text-end {text-align: end;}
@@ -106,11 +109,17 @@ body {
 
     width: 100vw;
     height: 100vh;
+    min-width: 1000px;
 
     color: var(--font-color-primary);
     background-color: var(--bg-primary);
 }
   
+#root {
+    width: 100%;
+    height: 100%;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;

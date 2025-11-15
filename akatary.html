@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>akatary</title>
+    <script src="landing.js"></script>
+    <link rel="icon" href="assets/favicon.ico" />
+
+    <link rel="stylesheet" href="assets/css/art.css">
+    <link rel="stylesheet" href="assets/css/book.css">
+    <link rel="stylesheet" href="assets/css/utils.css">
+    <link rel="stylesheet" href="assets/css/vars/_theme.css">
+    <link rel="stylesheet" href="assets/css/vars/_fonts.css">
+
+    <link rel="apple-touch-icon" href="assets/apple.png" />
+    <script src="https://kit.fontawesome.com/51acc43a61.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>  
+<div id="root">
+   <nav></nav>
+   <main class="flex justify-between align-center width-100" style="height: 100%">
+        <!-- left art gallery -->
+        <div class="gallery">
+            <ak-drawing 
+                class="drawing-container"
+                x-data="{ pinColor: 'orange', containerProps: { transform: 'rotate(5deg)' }, height: '35%', src: 'assets/drawings/0.png' }"
+            ></ak-drawing>
+            <ak-drawing 
+                class="drawing-container"
+                x-data="{ pinColor: '#39cbb9', containerProps: { transform: 'rotate(0deg)' }, height: '20%', src: 'assets/drawings/5.png' }"
+            ></ak-drawing>
+        </div>
+
+        <!-- book -->
+        <div 
+            id="book" 
+            class="flex align-center justify-center" 
+            style="width: 65%; height: max(40vw, 400px);"
+        >
+            <!-- navigation -->
+            <div class="flex column align-center width-100 height-100">
+                <nav
+                    style="margin: -35px 0 0 1.62vw;"
+                    class="flex align-self-start width-100"
+                    x-data="{ sections: SECTIONS }"
+                >
+                    <template x-for="section in sections">
+                        <a 
+			                :id="section"
+                            :href="'#'+section" 
+                            onClick="Section.select(event)" 
+                            :class="Section.isSelected(section) ? 'active' : ''"
+                            x-text="section.charAt(0).toUpperCase() + section.slice(1)"
+                        ></a>
+                    </template>
+                </nav>
+                <div class="page" style="width: 95%; height: 100%; margin: 0 0 -20px 0"></div>
+            </div>
+
+            <!-- content -->
+            <div
+                id="cover" 
+                class="absolute" 
+                style="width: max(65%, 650px); height: max(40vw, 400px); margin: 20px 0 0 -20px;"
+            >
+                <div>
+                    <!-- title -->
+                    <div>
+                        <!-- <a href="" class="icon-button">
+                            <i class="fa-brands fa-github"></i>
+                            <span class="tooltip">Test</span>
+                        </a> -->
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- right art gallery -->
+        <div class="gallery">
+            <ak-drawing 
+                class="drawing-container"
+                x-data="{ pinColor: '#39cbb9', containerProps: { transform: 'rotate(-5deg)' }, height: '20%', src: 'assets/drawings/1.png' }"
+            ></ak-drawing>
+            <ak-drawing 
+                class="drawing-container"
+                x-data="{ pinColor: '#39cbb9', containerProps: { transform: 'rotate(0deg)' }, height: '22%', src: 'assets/drawings/4.png' }"
+            ></ak-drawing>
+            <ak-drawing 
+                class="drawing-container"
+                x-data="{ pinColor: '#39cbb9', containerProps: { transform: 'rotate(3deg)' }, height: '30%', src: 'assets/drawings/2.png' }"
+            ></ak-drawing>
+        </div>
+
+        <!-- templates -->
+        <template id="ak-drawing-template" :style="{ ...containerProps }">
+            <div 
+                class="drawing width-100" 
+                :style="{ ...containerProps }"
+            >
+                <i class="fa-solid fa-circle pin absolute circle shadow" :style="{ color: pinColor, height: height }"></i>
+                <img :src="src" class="width-100"/>
+            </div>
+        </template>
+    </main>
+    <script src="akatary.js"></script>
+</body>
+</html>
