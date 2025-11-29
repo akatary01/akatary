@@ -1,0 +1,32 @@
+<form id="contactForm" class="flex align-center justify-center column width-100 height-100">
+    <input 
+        required
+        id="contactName"
+        type="text" 
+        placeholder="Your name" 
+        class="input-field width-50 margin-10"
+    />
+    <input 
+        required
+        type="email" 
+        id="contactEmail"
+        placeholder="Your email" 
+        class="input-field width-50 margin-10"
+    />
+    <textarea 
+        required
+        id="contactMessage"
+        placeholder="Your message or comment" 
+        class="input-field width-50 height-30 margin-10"
+    ></textarea>
+    <div style="width: 275px; margin-top: 10px;" class="flex align-center">
+        <div style="border: 1px solid var(--bg-secondary);" class="width-100"></div>
+        <button 
+            type="submit"
+            class="absolute icon-button flex justify-end" 
+            onclick="sendMessage(event);"
+        >
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </button>
+    </div>
+</form>

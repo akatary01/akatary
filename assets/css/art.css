@@ -1,9 +1,9 @@
 /***** Always True *****/
 @media only screen {
     .pin {
-        width: max(1vw, 10px);
-        height: max(1vw, 10px);
-        margin-top: min(-0.5vw, -5px);
+        width: 10px;
+        height: 10px;
+        margin-top: -5px;
         box-shadow: var(--box-shadow-default);
     }
 
@@ -23,11 +23,11 @@
     }
 
     .gallery {
-        width: 17%;
+        width: 16%;
         display: flex;
         align-items: center;
         flex-direction: column;
-        height: max(50vw, 500px);
+        height: 600px;
         justify-content: space-around;
     }
 }
