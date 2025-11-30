@@ -127,13 +127,13 @@ class IconElement extends CustomElement {
 
 async function sendMessage(event) {
     const [name, email, message] = [
-        document.getElementById("contactName").value,
-        document.getElementById("contactEmail").value,
-        document.getElementById("contactMessage").value,
+        document.getElementById("contactName"),
+        document.getElementById("contactEmail"),
+        document.getElementById("contactMessage"),
     ];
     
     // if any field is empty, do nothing
-    if (!name || !email || !message) {
+    if (!name.value || !email.value || !message.value) {
         return;
     }
     
@@ -142,9 +142,9 @@ async function sendMessage(event) {
 
     let url = `https://akatary.com/api/mail/contact`;
     const args = { 
-        name,
-        email,
-        message,
+        name: name.value,
+        email: email.value,
+        message: message.value,
         fromEmail: "akatary23@google.com",
         fromEmailConfirm: "akatary23@google.com",
         reciepientEmails: ["akatary23@google.com"],
@@ -164,6 +164,11 @@ async function sendMessage(event) {
     if (response.ok) {
         icon.classList.remove("fa-circle-chevron-right");
         icon.classList.add("fa-circle-check", "success");
+
+        // clear form fields
+        name.value = "";
+        email.value = "";
+        message.value = "";
     } else {
         icon.classList.remove("fa-circle-chevron-right");
         icon.classList.add("fa-circle-xmark", "error");
