@@ -125,6 +125,12 @@ class IconElement extends CustomElement {
     }
 } 
 
+class EntryElement extends CustomElement {
+    constructor() {
+        super('ak-entry-template');
+    }
+}
+
 async function sendMessage(event) {
     const [name, email, message] = [
         document.getElementById("contactName"),
@@ -183,6 +189,8 @@ async function sendMessage(event) {
 }
 
 // define the custom element 'ak-drawing'
+customElements.define('ak-icon', IconElement);
+customElements.define('ak-entry', EntryElement);
 customElements.define('ak-drawing', DrawingElement);
 
 let PAGE;
@@ -196,3 +204,15 @@ window.onload = async () => {
     PAGE = document.getElementById('page');           
     Section.init();
 }
+
+const sponj3d = { 
+    position: 'start',
+    title: 'Sponj3D', 
+    containerProps: { },
+    href: 'https://sponj3d.com', 
+    src: 'assets/projects/sponj3d.png', 
+    labels: ['AI', 'Web Dev', 'Real-time', '3D'], 
+    description: 'AI-powered real-time 3D model generation from text, images, and sketches.', 
+}
+
+const projects = { sponj3d };

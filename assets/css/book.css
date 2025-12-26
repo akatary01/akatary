@@ -90,6 +90,25 @@
         background: var(--spigot) no-repeat center / contain;
     }
 
+    .entry * {
+        color: var(--bg-primary)
+    }
+
+    .entry-img-container {
+        height: 100%;
+        padding: 0 20px;
+        background: url('../book-bg-4k.png');
+        box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .entry-label {
+        margin: 0 2px;
+        padding: 0px 5px;
+        height: fit-content;
+        color: var(--font-color-primary);
+        background-color: var(--bg-primary);
+    }
+
     .send-message {
         -webkit-animation: send-animation 1s ease-out both;
         animation: send-animation 1s ease-out both;
