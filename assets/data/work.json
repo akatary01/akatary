@@ -1,0 +1,29 @@
+{
+    "google": { 
+        "title": "Google", 
+        "containerProps": { },
+        "href": "", 
+        "src": "assets/work/google.png", 
+        "labels": ["Software Engineer", "8 Months"], 
+        "active": true,
+        "description": "Works on Flex: Google's resource (compute) management. Models stockout risk, saving millions of dollars and optimizing compute allocation." 
+    },
+    "tealstone": { 
+        "title": "Tealstone", 
+        "containerProps": { },
+        "href": "", 
+        "src": "assets/work/tealstone.png", 
+        "labels": ["Co-Founder", "Software Engineer", "6 Months"], 
+        "active": false,
+        "description": "Co-founded a product development firm. Generated over $50K in revenue. Delivered MVPs for 10+ clients ranging from an AI music platform to fine-tuned LLM for financial analysis." 
+    },
+    "apeFit": { 
+        "title": "Ape Fitness", 
+        "containerProps": { },
+        "href": "", 
+        "src": "assets/work/ape_fit_2.png", 
+        "active": false,
+        "labels": ["Co-Founder", "Chief Executive Officer", "1 Year"], 
+        "description": "Co-founded Ape Fitness to help gamify fitness. Signed 10 gyms in New England. Raised $175K in pre-seed funding." 
+    }
+}

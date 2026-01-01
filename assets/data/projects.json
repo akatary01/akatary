@@ -1,0 +1,56 @@
+{
+    "sponj3d": { 
+        "title": "Sponj3D", 
+        "containerProps": { },
+        "href": "", 
+        "active": false,
+        "src": "assets/projects/sponj.png", 
+        "labels": ["AI", "Web Dev", "Real-time", "3D"], 
+        "description": "AI-powered real-time 3D model generation from text, images, and sketches." 
+    },
+    "mitMsa": { 
+        "title": "MIT MSA", 
+        "containerProps": { },
+        "href": "https://mit-msa.com/", 
+        "src": "assets/projects/mit_msa_2.png", 
+        "labels": [""], 
+        "active": true,
+        "description": "A website for the MIT Muslim Student Association to showcase thier information and events. Over 3000 visits monthly." 
+    },
+    "stardust": { 
+        "title": "Stardust", 
+        "containerProps": { },
+        "href": "", 
+        "src": "assets/projects/stardust.png", 
+        "labels": [""], 
+        "active": false,
+        "description": "A Clash of Clans themed Minecraft server 2 friends and I are working on developing. Developed server from scratch and created over 10 plugins for it." 
+    },
+    "ployem": { 
+        "title": "Ployem", 
+        "containerProps": { },
+        "href": "", 
+        "src": "assets/projects/ployem_2.png", 
+        "labels": [""], 
+        "active": false,
+        "description": "A free and open source interpreter lab, inspired by jupyter notebook, supporting python, javascript, latex, and more" 
+    },
+    "starfront": { 
+        "title": "Starfront", 
+        "containerProps": { },
+        "href": "", 
+        "src": "assets/projects/starfront_2.png", 
+        "labels": [""], 
+        "active": false,
+        "description": "A single player online game, completed along side 2 of my friends over the course of 2 weeks" 
+    },
+    "simba": { 
+        "title": "Simba", 
+        "containerProps": { },
+        "href": "", 
+        "src": "assets/projects/simba_2.png", 
+        "labels": [""], 
+        "active": true,
+        "description": "I was looking for a major, wanted to explore 3D printing, and had a great friends ready to help. So over IAP, we created a team and put together 2 3D printers -- Resputen for my friend and Simba for me." 
+    }
+}

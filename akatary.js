@@ -13,8 +13,10 @@ class Section {
         console.log(`[Section.init] >> selected: ${section}`);
 
         let content = "";
+        let data = {};
         if (SECTIONS.includes(section)) {
             content = await (await fetch(`sections/${section}.html`)).text();
+            data = await (await fetch(`assets/data/${section}.json`)).json();
         }
             
         // load selected section immediately
@@ -25,6 +27,15 @@ class Section {
             contactSection,
         ] = await Promise.all(
             SECTIONS.map(s => s !== section ? "" : content)
+        );
+
+        [
+            projectData,
+            workData, 
+            researchData, 
+            contactData,
+        ] = await Promise.all(
+            SECTIONS.map(s => s !== section ? {} : data)
         );
 
         if (SECTIONS.includes(section)) {
@@ -42,6 +53,16 @@ class Section {
         ] = await Promise.all(
             SECTIONS.map(
                     s => s !== section ? fetch(`sections/${s}.html`).then(res => res.text()) : content
+                )
+            );
+        [
+            projectData,
+            workData, 
+            researchData, 
+            contactData,
+        ] = await Promise.all(
+            SECTIONS.map(
+                    s => s !== section ? fetch(`assets/data/${s}.json`).then(res => res.json()) : data
                 )
             );
     }
@@ -200,19 +221,12 @@ let contactSection;
 let projectsSection;
 let researchSection;
 
+let workData = {};
+let projectData = {};
+let contactData = {};
+let researchData = {};
+
 window.onload = async () => {
     PAGE = document.getElementById('page');           
     Section.init();
 }
-
-const sponj3d = { 
-    position: 'start',
-    title: 'Sponj3D', 
-    containerProps: { },
-    href: 'https://sponj3d.com', 
-    src: 'assets/projects/sponj3d.png', 
-    labels: ['AI', 'Web Dev', 'Real-time', '3D'], 
-    description: 'AI-powered real-time 3D model generation from text, images, and sketches.', 
-}
-
-const projects = { sponj3d };

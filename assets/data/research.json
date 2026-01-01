@@ -1,0 +1,11 @@
+{
+    "style2fab": { 
+        "title": "Style2Fab", 
+        "containerProps": { },
+        "active": true,
+        "href": "https://arxiv.org/pdf/2309.06379", 
+        "src": "assets/research/style2fab.png", 
+        "labels": ["MIT", "CSAIL", "Human-Computer Interaction"], 
+        "description": "Style2Fab: Functionality-Aware Segmentation for Fabricating Personalized 3D Models with Generative AI. A system called Style2Fab that allows users to selectively stylize 3D models without compromising their functionality." 
+    }
+}
