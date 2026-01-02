@@ -2,7 +2,8 @@
     "sponj3d": { 
         "title": "Sponj3D", 
         "containerProps": { },
-        "href": "", 
+        "href": null, 
+        "icon": null,
         "active": false,
         "src": "assets/projects/sponj.png", 
         "labels": ["AI", "Web Dev", "Real-time", "3D"], 
@@ -12,6 +13,7 @@
         "title": "MIT MSA", 
         "containerProps": { },
         "href": "https://mit-msa.com/", 
+        "icon": null,
         "src": "assets/projects/mit_msa_2.png", 
         "labels": [""], 
         "active": true,
@@ -20,7 +22,8 @@
     "stardust": { 
         "title": "Stardust", 
         "containerProps": { },
-        "href": "", 
+        "href": null, 
+        "icon": null,
         "src": "assets/projects/stardust.png", 
         "labels": [""], 
         "active": false,
@@ -29,7 +32,8 @@
     "ployem": { 
         "title": "Ployem", 
         "containerProps": { },
-        "href": "", 
+        "href": null, 
+        "icon": null,
         "src": "assets/projects/ployem_2.png", 
         "labels": [""], 
         "active": false,
@@ -38,7 +42,8 @@
     "starfront": { 
         "title": "Starfront", 
         "containerProps": { },
-        "href": "", 
+        "href": null, 
+        "icon": null,
         "src": "assets/projects/starfront_2.png", 
         "labels": [""], 
         "active": false,
@@ -47,7 +52,8 @@
     "simba": { 
         "title": "Simba", 
         "containerProps": { },
-        "href": "", 
+        "href": null, 
+        "icon": null,
         "src": "assets/projects/simba_2.png", 
         "labels": [""], 
         "active": true,

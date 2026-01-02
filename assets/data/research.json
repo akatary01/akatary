@@ -3,6 +3,7 @@
         "title": "Style2Fab", 
         "containerProps": { },
         "active": true,
+        "icon": "fa-file",
         "href": "https://arxiv.org/pdf/2309.06379", 
         "src": "assets/research/style2fab.png", 
         "labels": ["MIT", "CSAIL", "Human-Computer Interaction"], 
