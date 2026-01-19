@@ -2,9 +2,9 @@
     "sponj3d": { 
         "title": "Sponj3D", 
         "containerProps": { },
-        "href": null, 
+        "href": "https://akatary.com/sponj", 
         "icon": null,
-        "active": false,
+        "active": true,
         "src": "assets/projects/sponj.png", 
         "labels": ["AI", "Web Dev", "Real-time", "3D"], 
         "description": "AI-powered real-time 3D model generation from text, images, and sketches." 
