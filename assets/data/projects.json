@@ -1,4 +1,14 @@
 {
+    "vendistri": { 
+        "title": "Vendistri", 
+        "containerProps": { },
+        "href": "https://vendistri.com", 
+        "icon": null,
+        "active": true,
+        "src": "assets/projects/vendistri.png", 
+        "labels": ["Autonomus", "Web Dev", "Telementary", "Stripe"], 
+        "description": "Management software for vending operators." 
+    },
     "sponj3d": { 
         "title": "Sponj3D", 
         "containerProps": { },
