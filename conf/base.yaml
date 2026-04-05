@@ -1,0 +1,5 @@
+cors:
+  allow_origins:
+    - https://akatary.com
+  allow_methods:
+    - GET
