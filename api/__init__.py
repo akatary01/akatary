@@ -25,8 +25,8 @@ async def send_mail(req: ContactRequest = Depends()):
         raise HTTPException(status_code=400, detail=f"No SMTP credentials configured for {req.fromEmail}")
 
     msg = MIMEText(f"From: {req.name} <{req.email}>\n\n{req.message}")
-    msg["Subject"] = req.subject
     msg["From"] = smtp.email
+    msg["Subject"] = req.subject
     msg["To"] = req.reciepientEmails
 
     with smtplib.SMTP("smtp.gmail.com", 587) as server:
