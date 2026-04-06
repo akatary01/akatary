@@ -5,6 +5,9 @@ class GmailSmtp(BaseModel):
     email: str
     password: str
 
+    port: int
+    server: str
+
 class Secrets(BaseModel):
     gmail_smtp: list[GmailSmtp]
 

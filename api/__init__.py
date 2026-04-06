@@ -16,22 +16,21 @@ api.add_middleware(
 )
 
 @api.get("/api/mail/contact")
-async def send_mail(req: ContactRequest = Depends()):
-    if req.fromEmail != req.fromEmailConfirm:
+async def send_mail(request: ContactRequest = Depends()) -> None:
+    if request.fromEmail != request.fromEmailConfirm:
         raise HTTPException(status_code=400, detail="fromEmail does not match fromEmailConfirm")
 
-    smtp = next((s for s in secrets.gmail_smtp if s.email == req.fromEmail), None)
+    smtp = next((s for s in secrets.gmail_smtp if s.email == request.fromEmail), None)
     if smtp is None:
-        raise HTTPException(status_code=400, detail=f"No SMTP credentials configured for {req.fromEmail}")
+        raise HTTPException(status_code=400, detail=f"No SMTP credentials configured for {request.fromEmail}")
 
-    msg = MIMEText(f"From: {req.name} <{req.email}>\n\n{req.message}")
+    msg = MIMEText(f"From: {request.name} <{request.email}>\n\n{request.message}")
     msg["From"] = smtp.email
-    msg["Subject"] = req.subject
-    msg["To"] = req.reciepientEmails
+    msg["Subject"] = request.subject
+    msg["To"] = request.reciepientEmails
 
-    with smtplib.SMTP("smtp.gmail.com", 587) as server:
+    with smtplib.SMTP(smtp.server, smtp.port) as server:
         server.starttls()
         server.login(smtp.email, smtp.password)
-        server.sendmail(smtp.email, req.reciepientEmails.split(","), msg.as_string())
-
-    return {"ok": True}
+        server.sendmail(smtp.email, request.reciepientEmails.split(","), msg.as_string())
+    
