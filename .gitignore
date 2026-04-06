@@ -7,4 +7,4 @@ package-lock.json
 api/akatary_api_env
 *__pycache__
 api/.env
-conf/secrets.yaml
+api/conf/secrets.yaml
