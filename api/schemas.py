@@ -1,3 +1,5 @@
+from typing import List
+
 from pydantic import BaseModel
 
 class ContactRequest(BaseModel):
@@ -20,11 +22,11 @@ class GmailSmtp(BaseModel):
     server: str
 
 class Secrets(BaseModel):
-    gmail_smtp: list[GmailSmtp]
+    gmail_smtp: List[GmailSmtp]
 
 class Cors(BaseModel):
-    allow_origins: list[str]
-    allow_methods: list[str]
+    allow_origins: List[str]
+    allow_methods: List[str]
 
 class Config(BaseModel):
     cors: Cors
