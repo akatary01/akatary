@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from conf import config, secrets
+from api.conf import config, secrets
 from api.schemas import ContactRequest
 
 api = FastAPI()
