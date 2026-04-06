@@ -172,9 +172,9 @@ async function sendMessage(event) {
         name: name.value,
         email: email.value,
         message: message.value,
-        fromEmail: "akatary23@google.com",
-        fromEmailConfirm: "akatary23@google.com",
-        reciepientEmails: ["akatary23@google.com"],
+        fromEmail: "akatary23@gmail.com",
+        fromEmailConfirm: "akatary23@gmail.com",
+        reciepientEmails: ["akatary23@gmail.com"],
         subject: "New contact form message from akatary.com",
     }
 
