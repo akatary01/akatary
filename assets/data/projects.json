@@ -9,6 +9,16 @@
         "labels": ["Web Dev", "Image Processing", "Javalin", "AlpineJs"], 
         "description": "Converts images into custom sized jigsaw puzzles. Handles transparent pixels and inorganic boundaries." 
     },
+    "objectiveTracker": { 
+        "title": "Objective Trackergit", 
+        "containerProps": { },
+        "href": "https://github.com/akatary01/objective-tracker/releases/tag/objectiveTrackerV1.0", 
+        "icon": null,
+        "active": true,
+        "src": "assets/projects/objectiveTracker.png", 
+        "labels": ["PC App", "Electron", "MacOS", "Windows"], 
+        "description": "A minimal sticky-note app for tracking objectives with sections, tasks, and sub-tasks." 
+    },
     "vendistri": { 
         "title": "Vendistri", 
         "containerProps": { },
