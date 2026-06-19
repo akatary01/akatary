@@ -16,7 +16,7 @@
         "icon": null,
         "active": true,
         "src": "assets/projects/objectiveTracker.png", 
-        "labels": ["PC App", "Electron", "MacOS", "Windows"], 
+        "labels": ["Vibe Coded", "ElectronJS", "MacOS", "Windows"], 
         "description": "A minimal sticky-note app for tracking objectives with sections, tasks, and sub-tasks." 
     },
     "vendistri": { 
