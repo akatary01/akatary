@@ -1,4 +1,14 @@
-{
+{   
+    "puzzlify": { 
+        "title": "Puzzlify", 
+        "containerProps": { },
+        "href": "https://akatary.com/puzzlify", 
+        "icon": null,
+        "active": true,
+        "src": "assets/projects/puzzlify.png", 
+        "labels": ["Web Dev", "Image Processing", "Javalin", "AlpineJs"], 
+        "description": "Converts images into custom sized jigsaw puzzles. Handles transparent pixels and inorganic boundaries." 
+    },
     "vendistri": { 
         "title": "Vendistri", 
         "containerProps": { },
