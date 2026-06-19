@@ -10,7 +10,7 @@
         "description": "Converts images into custom sized jigsaw puzzles. Handles transparent pixels and inorganic boundaries." 
     },
     "objectiveTracker": { 
-        "title": "Objective Trackergit", 
+        "title": "Objective Tracker", 
         "containerProps": { },
         "href": "https://github.com/akatary01/objective-tracker/releases/tag/objectiveTrackerV1.0", 
         "icon": null,
