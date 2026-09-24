@@ -8,5 +8,15 @@
         "src": "assets/research/style2fab.png", 
         "labels": ["MIT", "CSAIL", "Human-Computer Interaction"], 
         "description": "Style2Fab: Functionality-Aware Segmentation for Fabricating Personalized 3D Models with Generative AI. A system called Style2Fab that allows users to selectively stylize 3D models without compromising their functionality." 
+    },
+    "instructMesh": {
+        "title": "InstructMesh",
+        "containerProps": {},
+        "active": true,
+        "icon": "fa-file",
+        "href": "https://arxiv.org/pdf/2608.28534",
+        "src": "assets/research/instructMesh.png", 
+        "labels": ["MIT", "CSAIL", "Human-Computer Interaction"], 
+        "description": "By operating directly on the intermediate latent representation, InstructMesh allows users to apply robust geometric corrections without requiring expert modeling skills."
     }
 }
