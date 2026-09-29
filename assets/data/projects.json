@@ -12,7 +12,7 @@
     "objectiveTracker": { 
         "title": "Objective Tracker", 
         "containerProps": { },
-        "href": "https://github.com/akatary01/objective-tracker/releases/tag/objectiveTrackerV1.0", 
+        "href": "https://github.com/akatary01/objective-tracker/releases/tag/objectiveTrackerV2.0", 
         "icon": null,
         "active": true,
         "src": "assets/projects/objectiveTracker.png", 
